@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto'); //webfont url inplaatsen
+@font-face {						
+	font-family: Roboto, sans serif;
+	src: url: 
+}
+body{
+	font-family: Roboto, Arial; /*standaard font en backup font*/ 
+	
+}	
+.quoteKernwaarden {
+	color: white;
+	text-align: left;
+	float: left;
+	margin-left: 20px;
+}
+#quote{
+	font-size: 27px;
+	font-weight: bold;
+	position: absolute;
+	top: 150px;
+}
+#kernwaarden{
+	font-size: 18px;
+	font-weight: medium;
+	float: left;
+	position: absolute;
+	top: 190px;
+	left: 70px; 
+/*De kernwaarden en #quote en .quoteKernwaarden centreren en links uitlijnen*/
+}
+nav ul {
+  list-style-type: none; //geen bullets
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2C3946;
+  height: 87px;
+}
+/*navigatie, bullets weghalen, achtergrond kleur*/
+nav li {
+  float: right;
+  margin-right: 30px;
+  font-size: 26px;
+  font-weight: bold;
+
+}
+
+nav li a {			
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  position: relative;	
+  top: 10px;
+/*De navigatie centreren en midden in het balk plaatsen.*/
+}
+
+nav li a:hover { //muis overheen kleur geven.
+  background-color: #111111;
+}
+
+main  {								
+	height: 923px;
+	margin: auto;
+	background-image: url("../background.jpg");
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	align: justify;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 0px;
+
+}
+#titelsection {
+	position: relative;
+	left: 50px;
+	/*background-color: #2C3946; */
+	background-color: rgba(44, 57, 70, 0.7);
+	height: 420px;
+	width: 900px;
+	border-radius: 20px;
+	position: relative;
+	left: 480px;
+	top: 50px;	
+	text-align: center;
+	
+}
+h1 {
+	color: #C48310;
+
+}
+#COE {
+	font-size: 64px;
+	font-weight: black;
+}
+
+#borderHead {
+
+
+}
+div < h1 {
+	opacity: 1;
+	
+}
