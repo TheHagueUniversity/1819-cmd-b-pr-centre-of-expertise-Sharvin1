@@ -3,10 +3,16 @@
 	font-family: Roboto, sans serif;
 	src: url: 
 }
+/*algemeen body*/
 body{
 	font-family: Roboto, Arial; /*standaard font en backup font*/ 
 	
 }	
+h1 {
+	color: #C48310;
+	font-size: 50px;
+
+}
 .quoteKernwaarden {
 	color: white;
 	text-align: left;
@@ -27,6 +33,7 @@ body{
 	top: 190px;
 	left: 70px; 
 /*De kernwaarden en #quote en .quoteKernwaarden centreren en links uitlijnen*/
+/*Menubalk*/
 }
 nav ul {
   list-style-type: none; //geen bullets
@@ -60,46 +67,139 @@ nav li a:hover { //muis overheen kleur geven.
   background-color: #111111;
 }
 
-main  {								
+
+#titelsection  {								
 	height: 923px;
-	margin: auto;
 	background-image: url("../background.jpg");
 	background-repeat: no-repeat;
 	opacity: 0.9;
-	align: justify;
 	margin-left: 100px;
 	margin-right: 100px;
-	margin-top: 0px;
+	margin-top: -53px;
 
 }
-#titelsection {
+
+#kader {
 	position: relative;
 	left: 50px;
-	/*background-color: #2C3946; */
 	background-color: rgba(44, 57, 70, 0.7);
-	height: 420px;
-	width: 900px;
+	height: 355px;
+	width: 750px;
 	border-radius: 20px;
 	position: relative;
-	left: 480px;
-	top: 50px;	
+	left: 300px;
+	top: 100px;	
 	text-align: center;
+	color: white;
 	
-}
-h1 {
-	color: #C48310;
-
 }
 #COE {
 	font-size: 64px;
 	font-weight: black;
 }
-
-#borderHead {
-
-
+#thema {
+	font-size: 36px;
+	margin: -60px;
 }
-div < h1 {
-	opacity: 1;
+#themaPartner {
+	font-size: 24px;
+	margin: 85px;
+	text-align: left;
+	margin-left: 70px;
+}
+#buttonPartner {
+	position: relative;
+	left: 265px;
+	top: 10px;
+	background-color: #A0A51E;
+	color: white;
+	width: 190px;
+	height: 55px;
+	border : 1px;
+	border-radius: 10px;
+	font-size: 28px;
+	font-weight: bold;
+/*button goed plaatsen*/
+}
+#klikHier {
+	
+	position: absolute;
+	left: 551px;
+	top: 240px;
+	
+	font-size: 24px;
+}
+
+#buttonPartner:hover {
+	background-color: 
+}
+
+/*Volgende catergorie*/
+#nieuwsbrief {
+	background-color: #2C3946;
+	height: 260px;
+	width: 1270px;
+	color: white;
+	border-radius: 15px;
+	position: relative;
+	left: 115px;
+	
+/*Nieuwsbrief verscuiven en tekst centreren*/
+}
+
+#kaderNieuwsbrief { 
+	margin: 50px;
+}
+#titelNieuwsbrief {
+	text-align: center;
+}
+#buttonInschrijven {
+	background-color: #C48310;
+	color: white;
+	width: 330px;
+	height: 60px;
+	border: 1px;
+	border-radius: 10px;
+	font-size: 48px;
+	font-weight: bold;
+	position: relative;
+    top: 10px;
+	left: 75px;
+	
+	
+} 
+#naamNieuwsbrief, #emailNieuwsbrief {   /*bezig met de labels op de inputs te krijgen*/
+	width: 330px;
+	height: 40px;
+	display: block;
+	margin: 0px;
+	position: relative;
+	top: 8px;
+	left: 150px;
+}
+#labelNaam {
+	float: left;
+	position: relative;
+	left: 0px;
+	top: -3px;
 	
 }
+#labelEmail {
+	float: left;
+	position: relative;
+	left: 237px;
+	top: -3px;
+}
+
+#nieuwsbriefTekst {
+	font-size: 22px; 	
+	text-align: left;;
+}
+.labelsOpInput {
+	float: left;
+	
+}
+
+
+
+
