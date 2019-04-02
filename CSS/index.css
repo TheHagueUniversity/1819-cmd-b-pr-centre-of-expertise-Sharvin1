@@ -63,7 +63,7 @@ nav li a {
 /*De navigatie centreren en midden in het balk plaatsen.*/
 }
 
-nav li a:hover { //muis overheen kleur geven.
+nav li a:hover { /*muis overheen kleur geven.*/
   background-color: #111111;
 }
 
@@ -121,17 +121,20 @@ nav li a:hover { //muis overheen kleur geven.
 	font-weight: bold;
 /*button goed plaatsen*/
 }
-#klikHier {
+
+
+#buttonPartner:hover {
+	background-color: #A0A56B;
+	opacity: .96;
 	
+}
+
+#klikHierTekst {
 	position: absolute;
 	left: 551px;
 	top: 240px;
-	
 	font-size: 24px;
-}
-
-#buttonPartner:hover {
-	background-color: 
+/* de tekst bovenop de klik hier knop plaatsen en font-size*/
 }
 
 /*Volgende catergorie*/
@@ -144,14 +147,18 @@ nav li a:hover { //muis overheen kleur geven.
 	position: relative;
 	left: 115px;
 	
-/*Nieuwsbrief verscuiven en tekst centreren*/
+	
+/*Nieuwsbrief verschuiven en tekst centreren*/
 }
 
 #kaderNieuwsbrief { 
 	margin: 50px;
+	
 }
 #titelNieuwsbrief {
 	text-align: center;
+	padding-top: 10px;
+	/*de tekst meld u aan voor onze nieuwsbrief centreren*/
 }
 #buttonInschrijven {
 	background-color: #C48310;
@@ -163,42 +170,90 @@ nav li a:hover { //muis overheen kleur geven.
 	font-size: 48px;
 	font-weight: bold;
 	position: relative;
-    top: 10px;
-	left: 75px;
-	
-	
+	top: 16px;
+	/*inschrijf knop opmaak en positie*/
 } 
-#naamNieuwsbrief, #emailNieuwsbrief {   /*bezig met de labels op de inputs te krijgen*/
-	width: 330px;
-	height: 40px;
-	display: block;
-	margin: 0px;
-	position: relative;
-	top: 8px;
-	left: 150px;
+
+#buttonInschrijven:hover {
+	background-color: #CC6600;
 }
-#labelNaam {
-	float: left;
-	position: relative;
-	left: 0px;
-	top: -3px;
+.labelsOpInput { 
 	
+float: left;
 }
-#labelEmail {
-	float: left;
-	position: relative;
-	left: 237px;
-	top: -3px;
+/*de inputs en knop naast elkaar plaatsen*/
+#naamNieuwsbrief, #emailNieuwsbrief{
+	height: 50px;
+	width: 400px;
+	/*De inputvelden groter maken*/
+}
+#labelNaam, #labelEmail, #naamNieuwsbrief, #emailNieuwsbrief {
+	display: 	block;
+	margin-right: 10px;
+/*De labels boven d e inputvelden plaatsen*/
 }
 
-#nieuwsbriefTekst {
-	font-size: 22px; 	
-	text-align: left;;
+/*Sectie laatste nieuws*/
+.afbeeldingNieuwsSectie {
+	height: 260px;
+	width: 340px;
 }
-.labelsOpInput {
+#artikel1, #artikel2, #artikel3 {
+	background-color: #2C3946;
+	height: 600px;
+	width: 340px;
 	float: left;
-	
+	margin-left: 120px;
+	border-radius: 20px;
+	/*De artikelen netjes van link naar rechts weergeven*/
 }
+.afbeeldingNieuwsSectie{
+	position: relative;
+	top: -16px;
+	left: -40px;
+	border-radius: 20px 20px 0px 0px;
+	/*De afbeeldingen van de artikelen netjes op de box plaatsen en top hoeken afronden*/
+}
+.artikelOpmaakHome {
+	color: #C48310;
+	font-size: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: -18px;
+/*De titel en tekst van de artikelen netjes in de box opmaken*/
+}
+.artikelTekstOpmaakHome {
+	color: white;
+	font-size: 16px;
+/*artikel font grootte veranderen en kleur*/
+}
+#titelArtikelOptimaalRolstoel {
+	font-size: 20px;
+	/*Kleine titel wat groter maken*/
+}
+.titelHomescreen {
+	padding-left: 120px;
+}
+.leesMeerLink{
+	color: #C48310;
+	float: right;
+	/*de lees meer links verschuiven en kleur veranderen*/
+}
+#tekstArtikelRaapPro {
+	padding-top: 34px;
+/*de optimaal rolstoel artikel tekst naar beneden schuiven, ziet er netter uit vind ik*/
+}
+#leesMeerOptimaal{
+	padding-top: 40px;
+	/*de lees meer knop van optimaal rolstoel beter uitlijnen*/
+}
+.leesMeerLink {
+	padding-right: 10px;
+	/*alle lees meer knopppen beter uitlijnen*/
+}
+
+/*sectie partner worden*/
+
 
 
 
