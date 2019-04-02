@@ -11,7 +11,14 @@ body{
 h1 {
 	color: #C48310;
 	font-size: 50px;
-
+}
+#line {
+	width: 1200px;
+	height: 1px;
+	background-color: black;
+	margin-top: 35px;
+	margin-left: 152px;
+	/*creates a line*/
 }
 .quoteKernwaarden {
 	color: white;
@@ -23,20 +30,20 @@ h1 {
 	font-size: 27px;
 	font-weight: bold;
 	position: absolute;
-	top: 150px;
+	top: 135px;
 }
 #kernwaarden{
 	font-size: 18px;
 	font-weight: medium;
 	float: left;
 	position: absolute;
-	top: 190px;
-	left: 70px; 
+	top: 176px;
+	left: 65px; 
 /*De kernwaarden en #quote en .quoteKernwaarden centreren en links uitlijnen*/
 /*Menubalk*/
 }
 nav ul {
-  list-style-type: none; //geen bullets
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -117,7 +124,7 @@ nav li a:hover { /*muis overheen kleur geven.*/
 	height: 55px;
 	border : 1px;
 	border-radius: 10px;
-	font-size: 28px;
+	font-size: 25px;
 	font-weight: bold;
 /*button goed plaatsen*/
 }
@@ -233,10 +240,12 @@ float: left;
 }
 .titelHomescreen {
 	padding-left: 120px;
+	margin-top: 10px;;
 }
 .leesMeerLink{
 	color: #C48310;
 	float: right;
+	margin-right: 5px;
 	/*de lees meer links verschuiven en kleur veranderen*/
 }
 #tekstArtikelRaapPro {
@@ -250,6 +259,22 @@ float: left;
 .leesMeerLink {
 	padding-right: 10px;
 	/*alle lees meer knopppen beter uitlijnen*/
+}
+#meerNieuws {
+	width: 340px;
+	height: 75px;
+	font-size: 44px;
+	font-weight: bold;
+	border: 1px;
+	border-radius: 10px;
+	color: white;
+	background-color: #C48310;
+	margin-top: 40px;
+	margin-left: 1045px;
+	
+}
+#meerNieuws:hover {
+	background-color: #CC6600;
 }
 
 /*sectie partner worden*/
