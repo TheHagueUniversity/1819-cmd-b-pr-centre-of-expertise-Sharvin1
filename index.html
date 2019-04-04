@@ -4,34 +4,40 @@
 <head>
 	<meta charsset= "utf-8">
 	<title>Centre of Expertise</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href= "CSS\index.css" type= "text/css" rel= "stylesheet">
-	
 	<script type= "text/javascript">
 
+	
 	</script>
 </head>
 
 <body>
 
 	<header>
-	<!--Logo-->
-		<a id= "logo" href= "#"><img src= "C:\Users\sharv\Documents\Communicatie en Multimedia Design\Periode 3\Design details, Realise\Betaversie website\1819-cmd-b-pr-centre-of-expertise-Sharvin1\Images\Logo CoE.png" id= "logo"/></a>
-		<!--navigatie in link-->
+	<!--'utility menu' -->
+		<a id= "logo" href= "#"><img src= "Images\Logo CoE.png" id= "logo"/></a>
+		<!--logo-->
+		<a id= "taal" class= "utilityMenu" href= "#">NL|EN</a>
+		<a id= "vergrootglas" class= "utilityMenu" href= "#"><img src= "Images\vergrootglas.bmp"/></a>
+		<input id= "zoekbalk" class= "utilityMenu"type= "text" id= "zoekbalk" placeholder= "Zoeken">
+		
+		
 		<nav>
 			<ul>
-				<li><a href= "#">Partner & Partner worden</a></li>
+				<li><a href= "partners.html">Partner & Partner worden</a></li>
 				<li><a href= "#">Evenementen</a></li>
 				<li><a href= "#">Nieuws</a></li>
 				<li><a href= "#">Over ons</a></li>
 				<li id= "quote" class= "quoteKernwaarden">Let's Change. You. Us. The world</li>
 				<li id= "kernwaarden" class= "quoteKernwaarden">Caring, Curious and Connecting</li>
-
+				<!--navigatie-->
 			</ul>
 		</nav>
-				<!--navigatie in link-->
 	</header>
 
 	<main>
+
 
 		<!--Startscherm met partner worden button-->
 
@@ -41,14 +47,15 @@
 				<h2 id= "thema" class = "titelIndex">Kwaliteit van leven: Mens en Technologie</h2>
 				<h3 id="themaPartner" class = "titelIndex">Wij hebben partners nodig voor de thema's Vitaliteit en Zorg & Revalidatie</h3>
 
+
 			<!--font kon niet black (bold), zoals in Axure. Nu niet zo netjes. fix dit later-->
 
 				
-
-				<input id= "buttonPartner" class= "titelIndex" type= "button" value= "Wordt partner" >
-	
+				<a id= "buttonPartner" class= "titelIndex" href= "#">Wordt partner</a>
+				 
 			</div>
 		</section>
+
 
 
 	<!--sectie nieuwsbrief -->
@@ -69,21 +76,22 @@
 							<input type= "email" id= "emailNieuwsbrief" name= "emailNieuwsbrief" minlength= "3" placeholder= "Vul uw e-mailadres in" required>
 					</div>
 						<input type= "submit" value= "Inschrijven" id= "buttonInschrijven" >
-
-			</form>
+				</form>
 			</div>
 		</section>
 		
-		<div id= "line"></div>
+		<div class= "line"></div>
 		
 		<!--Sectie nieuws-->
 		<article id="artikelSection">
 		
 
 
+
 		<section id="artikelSection">
 
 			<h1 id="titelLaatsteNieuws" class= "titelHomescreen">Laatste nieuws</h1>
+
 			
 		<!--Artikel 1-->
 			<div id= "artikel1">
@@ -118,22 +126,117 @@
 				<a id= "leesMeeRaakpro1" class= "leesMeerLink" href= "#">Lees meer ></a>
 			</div>
 			
-			<input type= "button" value= "Meer nieuws" id= "meerNieuws">
+			<a href= "#" id= "meerNieuws" class= "buttonHomepage">Meer nieuws</a>
+			
 		</article>
 		
-		<section id= "partnerWorden">
-			<h1 id="titelBekijkPartners">Bekijk hier onze partners</h1>
-			<p id= "tekstBekijkPartner">Als netwerkhogeschool heeft De Haagse rond haar vier onderzoeksplatsforms verschillende strategische samenwerkingsverbanden die zijn gericht op kennisdeling. </br>
-			Onze samenwerking met The Hague Security Delta, Medical Delta en City Lab zijn voorbeelden daarvan.</p>
+		<!--lijn-->
+		<div class= "line"></div>
+		
+		<!--sectie partners bekijken -->
+		<section id= "partnerWorden" class= "partnerWordenSection">
+			<h1 id= "titelPartnerWorden" class="tekstBekijkPartner">Bekijk hier onze partners</h1>
+			<p class= "tekstBekijkPartner">Als netwerkhogeschool heeft De Haagse rond haar vier onderzoeksplatsforms verschillende strategische samenwerkingsverbanden die zijn gericht op kennisdeling.</p>
+			<p class= "tekstBekijkPartner">Onze samenwerking met The Hague Security Delta, Medical Delta en City Lab zijn voorbeelden daarvan.</p>
 			
 			<figure>
-				<img id= "" class= "" src= "" alt= "" title = "">
-				<img id= "" class= "" src= "" alt= "" title = "">
-				<img id= "" class= "" src= "" alt= "" title = "">
+				<img id= "heagueSecurity" class= "partnerLogo" src= "Images/hague_scurity.jpg" alt= "logo the Hague Security Delta" title = "Logo van de Hague Security Delta">
+				<img id= "medicalDelta" class= "partnerLogo" src= "Images/medical-delta.jpg" alt= "logo Medical Delta" title = "Logo van Medical Delta">
+				<img id= "citylab" class= "partnerLogo" src= "Images/citylablogo.bmp" alt= "Logo Citylab" title = "Logo van Citylab">
 			</figure>
-			
+				
+				<a href= "partners.html" id= "buttonOnzePartners" class= "buttonHomepage">Onze partner</a>
+				
 		</section>
+	
+		<!--lijn-->
+		<div class= "line"></div>
+			
+		<!--sectie evenementen -->	
+		<article id= "evenementen"> 
+		
+			<h1 id= "titelEvenementen" class= "">Evenementen</h1>
+			<p class= "datumEvenement">Datum: 29 April 2019</p>
+			<p class= "LinkedIn">Delen via: <a class= "linkedInButton"> LinkedIn</p>
+				
+			<div id= "kaderHHSConnected" class= "kaderAlgemeen">
 
+				<form>
+					<img id= "HHSConnectedAfbeelding" class= "afbeeldingEvenement" src= "Images/HHSCONNECTED 2019 het grootste indoor.jpg" alt= "HHSCONNECTED" 
+					title= "HHSConnected de grootste indoor festival">
+				</form>
+			
+				<h4 id= "titelHHSConnected" class= "evenementArtikel titelEvenement">HHS#CONNECTED 2019: het grootste indoor studentenfestival van Den Haag</h4>
+				<p id= "tekstHHSConnected" class= "evenementArtikel tekstEvenement">Voor de vijfde keer wordt HHS#CONNECTED op het atrium van De Haagse Hogeschool 
+				georganiseerd door ACKU in samenwerking met diverse Haagse studentenorganisaties zoals IIAM, LITT-events, INTERACCESS, INTAC, HSV en PELARGOS.</p>
+				<a id= "evenementMeerInfoHHS" class= "meerInfo" href= "#">Meer info ></a>
+			</div>
+			
+			<p class= "datumEvenement">Datum: 30 April 2019</p>
+			<p class= "LinkedIn">Delen via: <a class= "linkedInButton">LinkedIn</p>		
+			<div id= "kaderRobGilsing" class= "kaderAlgemeen">	
+			
+				<form>
+					<img id= "titelRobGilsing" class= "afbeeldingEvenement" src= "Images/robgilsing.bmp" alt= "RobGilsing" title= "Rob Gilsing zijn intreerede">
+				</form>
+				
+				<h4 id= "titelRobGilsing" class= "evenementArtikel titelEvenement">Intreerede Rob Gilsing, lector Jeugdhulp in Transformatie</h4>
+				<p id= "tekstRobGilsing" class= "evenementArtikel tekstEvenement">Heb jij dat ook? Moeite met kiezen voor een hbo-opleiding die bij je past? Graag nodigen 
+				we je uit voor een gesprek met een studiekeuzeadviseur op maandag 4 maart, locatie De Haagse Hogeschool. Je ouders/verzorgers zijn ook hartelijk 
+				welkom.</p>
+				<a id= "evenementMeerInfoRG" class= "meerInfo" href= "#">Meer info ></a>
+			</div>
+							
+				<a id= "meerEvenementen" class= "buttonHomepage">Meer evenementen</a>
+			
+		</article>
+		
+		
+		<!--sectie footer-->
+		<footer id= "geheleFooter" class= "footer">
+			
+			<!--alle footer onderdelen netjes weergeven-->
+			<ul class= "verticaalLijn">
+				<li><h4>Navigatie</h4></li>
+				<li id= "homeFooter" class= "footerListNav"><a href= "Home">Home</a></li>
+				<li><a href= "OverOns.html">Over ons</a></li>	
+				<li><a href= "Nieuws.html">Nieuws</a></li>
+				<li><a href= "Partners.html">Partners</a></li>
+				<li><a href= "Evenementen.html">Evenementen</a></li>
+			</ul>
+			
+			<div id= "lijnNavOverig" class= "verticaalLijn"></div>
+			
+			<ul id= "overigePagina" class= "margin">
+				<li><h4>Overig pagina's</h4></li>
+				<li><a href= "#">Student</a></li>
+				<li><a href= "#">Docent</a></li>
+				<li><a href= "#">Kenniskring</a></li>
+				<li><a>Partner</a></li>
+			</ul>
+			
+			<div id= "lijnOverigGegevens" class= "verticaalLijn"></div>
+			
+			<ul class= "gegevens margin">
+				<li><h4>Gegevens</h4></li>
+				<li>Johanna Westerdijkplein 75</li>
+				<li>2521 EN Den Haag</li>
+				<li id= "telefoon">070 445 88 88</li>
+
+				<li class = "postgegevens"><h4 class= "onderTitel">Postadres</h4></li>
+				<li>Postbus 1333</li>
+				<li>2501 EH Den Haag</li>
+			</ul>
+			
+			<div id= "lijnGegevensLogo" class= "verticaalLijn"></div>
+			
+			<ul id= "HHSSectie" class= "margin">
+				<li id= "partOfTekst" class= "onderTitel">Part of</li>
+				<li><img src= "Images/HHS.png" alt= "Logo van de Haagse Hogeschool" title= "Logo van de Haagse Hogeschool"></li>
+				<li><a id= "contactOpnemen" href= "contact.html">Contact opnemen > </a></li>
+			
+		</footer>
+			
 		</main>
 </body>
 </html>
