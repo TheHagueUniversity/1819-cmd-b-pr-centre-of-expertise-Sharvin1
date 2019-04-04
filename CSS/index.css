@@ -1,23 +1,69 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto'); //webfont url inplaatsen
+
 @font-face {						
 	font-family: Roboto, sans serif;
 	src: url: 
 }
-/*algemeen body*/
+
 body{
-	font-family: Roboto, Arial; /*standaard font en backup font*/ 
-	
+	font-family: Roboto, Arial; 
+	width: 1280px;
+	margin: auto;
+	font-size: 20px;
+	/*standaard font en backup font*/ 
 }	
+a {
+	text-decoration: none;
+	/*alle 'hyperlinks' geen underlin geven*/
+}
+#logo {
+	width: 182px;
+	height: 78px;
+	/*logo afmeting*/ 
+}
+.utilityMenu {
+	float: right;
+	padding-top: 26px;
+	padding-right: 45px;
+	/*de bovenste gedeelte van de navigatie opmaken en goed positioneren*/
+}
+#taal {
+	padding-top: 36px;
+	font-size: 36px;
+	color: #A0A51E;
+	/*de taal hyperlinks opmaken (werken niet)*/
+}
+#zoekbalk {
+	border: 0px;
+	border-bottom: 2px solid;
+	margin-right: 10px;
+	color: #A0A51E;
+	width: 250px;
+	height: 25px;
+	margin-top: 19px;
+	font-size: 36px;
+	/*Zoekbalk netjes opmaken*/
+}
+#zoekbalk::placeholder {
+	color: #A0A51E;
+}
+#vergrootglas {
+	width: 50px;
+	height: 50px;
+}
 h1 {
 	color: #C48310;
-	font-size: 50px;
+	font-size: 56px;
 }
-#line {
-	width: 1200px;
+
+.line {
+	width: 1230px;
 	height: 1px;
 	background-color: black;
-	margin-top: 35px;
-	margin-left: 152px;
+	margin-top: 82px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
 	/*creates a line*/
 }
 .quoteKernwaarden {
@@ -27,18 +73,19 @@ h1 {
 	margin-left: 20px;
 }
 #quote{
-	font-size: 27px;
+	font-size: 24px;
 	font-weight: bold;
 	position: absolute;
-	top: 135px;
+	top: 93px;
+	left: 195px;
 }
 #kernwaarden{
 	font-size: 18px;
 	font-weight: medium;
 	float: left;
 	position: absolute;
-	top: 176px;
-	left: 65px; 
+	top: 134px;
+	left: 235px; 
 /*De kernwaarden en #quote en .quoteKernwaarden centreren en links uitlijnen*/
 /*Menubalk*/
 }
@@ -53,7 +100,7 @@ nav ul {
 /*navigatie, bullets weghalen, achtergrond kleur*/
 nav li {
   float: right;
-  margin-right: 30px;
+  margin-right: 22px;
   font-size: 26px;
   font-weight: bold;
 
@@ -64,7 +111,7 @@ nav li a {
   color: white;
   text-align: center;
   padding: 16px;
-  text-decoration: none;
+ 
   position: relative;	
   top: 10px;
 /*De navigatie centreren en midden in het balk plaatsen.*/
@@ -73,16 +120,18 @@ nav li a {
 nav li a:hover { /*muis overheen kleur geven.*/
   background-color: #111111;
 }
-
+nav li a:mouseover {
+	
+}
 
 #titelsection  {								
 	height: 923px;
+	width: 1280px;
 	background-image: url("../background.jpg");
 	background-repeat: no-repeat;
 	opacity: 0.9;
-	margin-left: 100px;
 	margin-right: 100px;
-	margin-top: -53px;
+	margin-top: -55px;
 
 }
 
@@ -101,28 +150,37 @@ nav li a:hover { /*muis overheen kleur geven.*/
 	
 }
 #COE {
-	font-size: 64px;
+	font-size: 66px;
 	font-weight: black;
+}
+	/*instelling naam naar voren brengen door groter te maken, alleen de font-weight moest dikker zijn*/
 }
 #thema {
 	font-size: 36px;
 	margin: -60px;
+	padding-top: 10px;
+	/*thema netter maken en verplaatsen*/
 }
+
 #themaPartner {
 	font-size: 24px;
 	margin: 85px;
 	text-align: left;
+	padding-top: 10px;
 	margin-left: 70px;
+	/*tekst om partner te worden netter maken en verplaatsen*/
 }
 #buttonPartner {
 	position: relative;
+	
 	left: 265px;
-	top: 10px;
+	top: -5px;
 	background-color: #A0A51E;
 	color: white;
 	width: 190px;
 	height: 55px;
-	border : 1px;
+	border: 1px;
+	padding: 10px;
 	border-radius: 10px;
 	font-size: 25px;
 	font-weight: bold;
@@ -136,23 +194,15 @@ nav li a:hover { /*muis overheen kleur geven.*/
 	
 }
 
-#klikHierTekst {
-	position: absolute;
-	left: 551px;
-	top: 240px;
-	font-size: 24px;
-/* de tekst bovenop de klik hier knop plaatsen en font-size*/
-}
-
-/*Volgende catergorie*/
+/*sectie nieuwsbrief*/
 #nieuwsbrief {
 	background-color: #2C3946;
-	height: 260px;
-	width: 1270px;
+	height: 271px;
+	width: 1252px;
 	color: white;
 	border-radius: 15px;
 	position: relative;
-	left: 115px;
+	left: 17px;
 	
 	
 /*Nieuwsbrief verschuiven en tekst centreren*/
@@ -165,6 +215,7 @@ nav li a:hover { /*muis overheen kleur geven.*/
 #titelNieuwsbrief {
 	text-align: center;
 	padding-top: 10px;
+	margin-bottom: -15px;
 	/*de tekst meld u aan voor onze nieuwsbrief centreren*/
 }
 #buttonInschrijven {
@@ -177,7 +228,7 @@ nav li a:hover { /*muis overheen kleur geven.*/
 	font-size: 48px;
 	font-weight: bold;
 	position: relative;
-	top: 16px;
+	top: 48px;
 	/*inschrijf knop opmaak en positie*/
 } 
 
@@ -185,24 +236,32 @@ nav li a:hover { /*muis overheen kleur geven.*/
 	background-color: #CC6600;
 }
 .labelsOpInput { 
-	
 float: left;
+margin-top: 27px;
 }
 /*de inputs en knop naast elkaar plaatsen*/
 #naamNieuwsbrief, #emailNieuwsbrief{
 	height: 50px;
-	width: 400px;
+	width: 396px;
+	border: 1px;
+	border-radius: 5px;
+	color: black;
+	font-size: 20px;
 	/*De inputvelden groter maken*/
 }
+#naamNieuwsbrief, #emailNieuwsbrief::placeholder {
+	font-size: 20px;
+}
 #labelNaam, #labelEmail, #naamNieuwsbrief, #emailNieuwsbrief {
-	display: 	block;
+	display: block;
 	margin-right: 10px;
+	margin-top: 1px;
 /*De labels boven d e inputvelden plaatsen*/
 }
 
 /*Sectie laatste nieuws*/
 .afbeeldingNieuwsSectie {
-	height: 260px;
+	height: 275px;
 	width: 340px;
 }
 #artikel1, #artikel2, #artikel3 {
@@ -210,7 +269,7 @@ float: left;
 	height: 600px;
 	width: 340px;
 	float: left;
-	margin-left: 120px;
+	margin-left: 66px;
 	border-radius: 20px;
 	/*De artikelen netjes van link naar rechts weergeven*/
 }
@@ -226,7 +285,7 @@ float: left;
 	font-size: 18px;
 	padding-left: 20px;
 	padding-right: 20px;
-	margin-top: -18px;
+	margin-top: -24px;
 /*De titel en tekst van de artikelen netjes in de box opmaken*/
 }
 .artikelTekstOpmaakHome {
@@ -239,10 +298,11 @@ float: left;
 	/*Kleine titel wat groter maken*/
 }
 .titelHomescreen {
-	padding-left: 120px;
+	padding-left: 20px;
 	margin-top: 10px;;
 }
 .leesMeerLink{
+	font-size:22px;
 	color: #C48310;
 	float: right;
 	margin-right: 5px;
@@ -260,9 +320,10 @@ float: left;
 	padding-right: 10px;
 	/*alle lees meer knopppen beter uitlijnen*/
 }
-#meerNieuws {
+.buttonHomepage {
 	width: 340px;
 	height: 75px;
+	padding: 10px 45px 10px 45px;
 	font-size: 44px;
 	font-weight: bold;
 	border: 1px;
@@ -270,16 +331,191 @@ float: left;
 	color: white;
 	background-color: #C48310;
 	margin-top: 40px;
-	margin-left: 1045px;
-	
+    margin-left: 885px;
+    position: relative;
+    top: 25px;
+	/*standaard buttons voor meer nieuws, bekijk partners en evenementen design */
 }
-#meerNieuws:hover {
+.buttonHomepage:hover {
 	background-color: #CC6600;
 }
 
 /*sectie partner worden*/
+#titelPartnerWorden {
+	margin-left: 5px;
+}
+.tekstBekijkPartner {
+	width: 625px;
+	margin-left: 20px;
+	/*tekst en titel netjes in 600px weergeven*/
+}
+#partnerWorden {
+	height: 565px;
+}
+.partnerLogo{
+	height: 170px;
+	display: inline;
+}
+#heagueSecurity {
+	margin-left: -20px;
+	width: 250px;
+}
+#medicalDelta {
+	width: 350px;
+}
 
+#citylab {
+	width: 530px;
+	height: 130px;
+	display: block;
+	margin-left: -25px;
+	margin-bottom: 0px;
+	/*De hagueSecurity en medicalDelta naast elkaar plaatsten en citylab onder plaatsen.*/
+}
+#buttonOnzePartners {
+	position: relative;
+	top: -90px;
+}
 
+/*sectie evenemenenten*/
+
+#titelEvenementen{
+	margin-left: 15px;
+}
+.titelEvenement {
+	color: #C48310;
+	font-size: 28px;
+	margin-top: -350px;
+/*de titels van elk individueel evenement kleur en grootte geven*/
+}
+.tekstEvenement {
+	margin-top: -260px;
+	color: white;
+	font-size: 22px;
+	font-weight: normal;
+} 
+.afbeeldingEvenement {
+	margin-left: 20px;
+	width: 540px;
+	height: 340px;
+/*afbeelding een lengte en breedt geven*/
+}
+.evenementArtikel {
+	width: 655px;
+	height: 200px;
+	background-color: #2C3946;	
+	padding: 15px;	
+	float: right;
+	margin-right: 40px;
+	position: relative;
+	top: 15px;
+	
+	z-index: -1;
+	/*evenementartikelen niet een paar zinnen maken door het maximale lengtes en breedtes te geven*/
+}
+#kaderAlgemeen {
+	display: inline;
+	/*tekst naast elkaar plaatsen*/
+}
+.meerInfo {
+	color: #C48310;
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+	top: -63px;
+	left: 1035px;
+	/*de button meer info van elk evenement stylen en verplaatsen*/
+}
+.LinkedIn {
+	font-size: 26px;
+	float: right;
+	margin-top: 45px;
+	margin-right: 5px;
+	/*de gehele linkedin tekst verplaatsen bij elk evenement*/
+}
+.linkedInButton {
+	color: #169BD5;
+	font-size: 28px;
+	font-weight: bold;
+	margin-right: 40px;
+	margin-top: 0px;
+	/*de LinkedIn button zelf veranderen van kleur en grootte*/
+}
+.datumEvenement {
+	font-size: 26px;
+	margin-left: 21px;
+	margin-bottom: -60px;
+	/*datum voor elk evenement verplaatsen en font grootte veranderen*/
+}
+#meerEvenementen {
+	position: absolute;
+    top: 4100px;
+    left: 155px;
+    width: auto;
+    font-size: 43px;
+    padding: 15px 20px 0px 20px;
+	/*evenement button goed weergeven in verhouding en plaats*/
+}
+.footer {
+    margin-top: 225px;
+    width: 1280px;
+    height: 235px;
+    background-color: #2C3946;
+	/*de afmeting van de footer geven en kleur*/
+}
+footer ul {
+	list-style-type: none;
+	display: inline;
+	float: left;
+	margin-top: -30px;
+	/*de bullets weghalen en naast elkaar weergeven*/
+}
+footer h4 {
+	font-size: 26px;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 4px;
+	/*de 'titels' van de footer opmaken*/
+}
+footer ul li {
+	font-size: 18px;
+	padding-top: 7px;
+	padding-left: 0px;
+	margin-top: -3px;
+	color: white;
+	/*de gegevens juiste font grootte geven en alle li niet te dich opelkaar plaatsen*/
+}
+footer ul li a {
+	color: #C48310;
+	font-size: 22px;
+	/*de hyperlinks op laten vallen door de button kleur te geven*/
+}
+footer ul li img {
+	width: 240px;
+	height: 110px;
+	/*logo afmeting geven*/
+}
+.postgegevens {
+	margin-top: -25px;
+}
+
+.margin {
+	margin-left: 110px;
+	/*de ul in de footer wat netter maken door margin links te geven*/
+}
+#partOfTekst{ 
+	text-align: center;
+	/*de 'part of' centreren*/
+}
+#HHSSectie {
+	margin-top: 20px;
+	/*de logo van HHS wat naar beneden brengen*/
+}
+#contactOpnemen {
+	text-decoration: underline;
+	margin-left: 25px;
+	/*button contact opnemen underline geven en centreren*/
+}
 
 
 
